@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.produtos.apirest.produto.Produto;
@@ -20,7 +21,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value="/api")
-@Api(value="API Rest Produtos")
+//@Api(value="API Rest Produtos")
 public class ProdutoResource {
 
 	@Autowired
@@ -52,5 +53,10 @@ public class ProdutoResource {
 	@ApiOperation(value = "Exclui um produto por id")
 	public void deleteProduto(@PathVariable(value ="id") int id) {
 		 produtoRepository.deleteById(id);
+	}
+
+	@GetMapping("/t")
+	public String home() {
+		return "Hello World";
 	}
 }
