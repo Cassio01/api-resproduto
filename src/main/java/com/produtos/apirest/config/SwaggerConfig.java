@@ -20,7 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-	//@Bean
+	@Bean
 	public Docket producApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
@@ -35,7 +35,7 @@ public class SwaggerConfig {
 				"Produtos Api Rest",
 				"Api rest de cadastro de produtos",
 				"1.0",
-				"Terms of Service",
+				"Termos de serviços",
 				new Contact("Cássio Alves", "", "cassio@gmail.com"),
 				"Apache Lincense Version 2.0",
 				"", 
