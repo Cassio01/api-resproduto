@@ -35,7 +35,7 @@ public class SwaggerConfig {
 				"Produtos Api Rest",
 				"Api rest de cadastro de produtos",
 				"1.0",
-				"Termos de serviços",
+				"Termos de serviço.",
 				new Contact("Cássio Alves", "", "cassio@gmail.com"),
 				"Apache Lincense Version 2.0",
 				"", 
